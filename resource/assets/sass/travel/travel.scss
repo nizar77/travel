@@ -1,0 +1,85 @@
+@import "../include/scafold";
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+    margin:0;
+    pedding:0;
+
+   }
+.kepala{
+ top:0;
+ color:#fff;
+ padding:0;
+ background:#eaea;
+}
+nav{
+	position:sticky;
+	padding:0;
+	width: 100%;
+	height: 80px;
+	box-sizing:border-box;
+ }
+ nav.black{
+ 	background-color:rgba(0,0,0,.23);
+ }
+nav ul{
+	margin:0;
+	padding:0 100px;
+	display: flex;
+    float:right; 
+    list-style: none;  
+}
+nav ul li{
+	list-style:none;
+}
+nav ul li a{
+	padding:5px 20px;
+	font-size: .95em;
+	text-transform: uppercase;	
+	text-decoration:none;
+	line-height: 80px;
+	color:#262626;
+	transition: .5s;
+}
+nav ul li a.active,
+nav ul li a:hover{
+	background-color:red;	
+	color:#3f3f45;
+	text-decoration:none;
+}
+nav .logo{
+	float:left;
+}
+nav .logo img{
+	height:100px;
+	transition:.5s;
+}
+section.sec1{
+	width:100%;
+	height:100vh;
+	background:url(../../image/DJI_00101.jpg);
+	background-size: cover;
+}
+section.sec2{
+	width:100%;
+	height:100vh;
+	background:url(../../image/IMG_0484.JPG);
+	background-size: cover;
+}
+section.sec3{
+	width:100%;
+	height:100vh;
+	background:url(../../image/labuan-cermin.jpg);
+	background-size: cover;
+}
+section.isi{
+	padding:100px;
+}
+section.isi h1{
+	font-size:3em;
+}
+section .isi p{
+	font-size: 20px;
+}
+
+	

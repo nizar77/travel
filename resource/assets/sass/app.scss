@@ -1,0 +1,82 @@
+
+body{
+	background:#2d2c2c;
+}
+article{
+	.detail img{
+	margin-top:35px;
+	max-width:100%;
+	height:auto;
+	
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	}
+	.detail p{
+	 color:#fff;
+	 font-size:16px;
+	 font-weight:400;
+	 text-align:justify;
+	}
+
+}
+sidekanan{
+	padding:1px;
+	color:#fff;
+	text-align:justify;
+	p.list{
+	font-size:1.5em;
+	font-weight:lighter;
+	border-bottom:1px dotted #eaea;
+
+	}
+	.nomer{
+	font-size:1.5em;
+	
+	text-align:center;
+	font-weight:lighter;
+	}
+
+	
+    .title{
+	font-size:2em;
+	padding:3px;
+	font-style:italic;
+	border-bottom:1px solid #663388;
+	}
+	.title:hover{
+	font-weight:bold;
+	color:#663388;
+	
+	}
+	
+	img{
+	  padding:5px;
+
+	}
+	.kecil > .title{
+	font-size: 1.3em;	
+	font-weight:bold;
+	padding:3px 6px 3px;
+	font-style:italic;	
+	border-bottom:1px solid #663388;
+	transition:all .4s ease;
+	}
+	.kecil:hover > .title{	
+	 background-color:#663388;
+	 transition:all .4s ease;
+	}
+	.kecil p{
+	font-size:.91em;	
+	font-weight:normal;
+	text-align:left;
+	padding-left:3px;
+	transition:all .52s ease;
+	}
+	.kecil p:hover{
+	 color:#16a067;	
+	 trasnsition:all .52s ease;
+	
+	}
+}

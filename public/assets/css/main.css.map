@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["main.scss"],"sourcesContent":["body{\n\tbackground:#000;\n}\n.kotak{\n\twidht:80%;\n\theight:50%;\n\tcolor:#eaea;\n}"],"names":[],"mappings":"AAAA,AAAA,IAAI,AAAA,CACH,UAAU,CAAC,IAAI,CACf,AACD,AAAA,MAAM,AAAA,CACL,KAAK,CAAC,GAAG,CACT,MAAM,CAAC,GAAG,CACV,KAAK,CAAC,KAAK,CACX"}

@@ -1,0 +1,13 @@
+body {padding:40px; background-color: #1693da;}
+.input {
+    display:block;
+    text-decoration:none;
+    padding:10px 60px;    
+    background:#117ebb;
+    font-size:60px;
+    color:#fff;
+    border-radius: 0px;
+    box-shadow: 10px 2px 0px #003355;
+    transform: skew(-10deg);
+       
+}
