@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     browserSync=require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    /*babel = require('gulp-babel'),
-    uglify= require('gulp-uglify'),*/
+    /*babel = require('gulp-babel'),*/
+    uglify= require('gulp-uglify'),
     concat = require('gulp-concat');    
 
     gulp.task("sass",function(){
@@ -18,13 +18,14 @@ var gulp = require('gulp'),
         
     });
 
-    gulp.task('javascript',function(){  
+    gulp.task('script',function(){  
         return gulp.src("./resource/assets/js/**/*.js")  
        /*.pipe(babel({
         presets:['es2015']
         
        }))*/
-       .pipe(concat('travel.min.js'))
+       .pipe(uglify())
+       .pipe(concat('travel.min.js'))       
        .pipe(gulp.dest("./public/assets/js"));
 
          });
@@ -38,7 +39,7 @@ var gulp = require('gulp'),
          });	
     gulp.task('watch', function() {
     gulp.watch("./resource/assets/sass/**/*.scss",['sass'])
-    gulp.watch("./resource/assets/js/*.js",['javascript'])
+    gulp.watch("./resource/assets/js/*.js",['script'])
 
     gulp.watch("./public/assets/css/**/*.css").on('change', browserSync.reload)
     gulp.watch("./public/assets/js/*.js").on('change', browserSync.reload)

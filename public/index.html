@@ -9,40 +9,31 @@
     <meta name="author" content="Your name">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/travel.min.css">
- 
-<script type="text/javascript" src="./js/jquery23.js"></script>
+    
 </head>
 <body>
-<header>
-   <div class="kepala row">
-      <div class="container">
-        ini kepala
-      </div>    
-    </div>
-    <nav>
-      <div class="logo">
+  <div class="kepala">
+    <b>odsdsopdipos</b><span class="pull-right"><i class="fa fa-facebook"></i>&nbsp;<i class="fa fa-google"></i>&nbsp;<i class="fa fa-twitter"></i></span>
+  </div>
+  <nav>    
+    
+    <div class="logo">
         <img src="./image/gnu-head.png">
-      </div>
-      
-         <ul>       
-        <li> <a href="s" class="active">home</a></li>
+    </div>      
+      <ul class="active">       
+        <li> <a href="s" class="active"><i class="fa fa-home"></i>home</a></li>
         <li><a href="s">tara</a></li>
         <li><a href="">sunny</a></li>
         <li><a href="">sunny</a></li>
         <li><a href="">sunny</a></li>
-        <li><a href="">sunny</a></li>
-         
-      </ul>
-      
-    </nav>
-</header>
+        <li><a href="">sunny</a></li>         
+      </ul>      
+  </nav> 
+  <div class="toggle"> <i class="fa fa-bars fa-2x"></i>MENU</div>
  
-  <div class="col-md-12">
-   <div class="row">
-   <br>
-  <h3>dkjhfhdkfdff</h3>
-  <br>
+  
   <section class="sec1"></section>
     <section class="isi">
       <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
@@ -61,22 +52,29 @@
   </section>
  <section class="sec3"></section>
 
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me to hide paragraphs</button>
     
     </div>
   </div>
   
 
-<script type="text/javascript" src="./assets/js/travel.min.js"></script>
 
+<script type="text/javascript" src="./assets/js/travel.min.js"></script>
 <script type="text/javascript">
   (document).ready(function(){
-  $('.carousel').carousel({
-  interval:2000
- })
+    $('.toggle').click(function(){
+    $('ul').toggleClass('active');   
 
+   }) 
 });
 </script>
-<script type="text/javascript">document.getElementById("tutup").style.color = "#ffffff";</script>
+
 </body>
 </html>
 

@@ -1,0 +1,66 @@
+body{
+padding: 0;
+margin:0;
+font-family: sans-serif;
+}
+section.kepala{
+	top:0;
+	padding: 0 85px;
+	width: 100%;
+	height: auto;
+	background: #202c45;
+}
+section.kepala a{
+	text-decoration: none;
+	color:#fff;
+	display: inline-flex;
+	padding: 4px;
+	border-left: 1px solid grey;
+}
+section.kepala a:hover{
+	color: black;
+	background: #fff;
+	transition: .5s;
+}
+header{
+	background: #E54B4B;
+	color:#EBEBD3;
+	padding: 0 auto;
+	position: relative;
+}
+header::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+h1.logo{
+	float: left;
+	font-size: 2em;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+.logo span{
+	font-weight:300 ; 
+}
+.site-nav{
+	position: absolute;
+	top:100%;
+	right: 10%;
+	background: rgba(0,0,0,0.5);
+}
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style:none;		
+}
+.site-nav ul li{
+ padding: 10px 20px;
+
+}
+.site-nav ul li a{
+	color: #fff;
+	text-decoration:none;
+}
