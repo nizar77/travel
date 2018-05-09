@@ -8,19 +8,29 @@
      <meta name="description" content="Your description">
       <meta name="keywords" content="Your keywords">
      <meta name="author" content="Your name">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./public/assets/css/travel.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery31.min.js"></script>
 </head>
 
 <body>
 <div class="wrapper">	
 	<section class="kepala">
-		<div class="container">
-		<div class="title">ini dia </div><span class="pull-right title"><a href=""><i class="fa fa-edit"></i></a>&nbsp; <a href=""><i class="fa fa-eye"></i></a></span>
-	</section>
+    <span class="jadwal">Jadwal Kajian</span>
+    <div class="container">
+    <div class="title1">&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+    <span class="pull-right title">
+      <div class="ikon">
+        <ul>
+            <li class="y"><i class="fa fa-youtube-play"></i></li>
+            <li class="f"><i class="fa fa-facebook"></i></li>
+            <li class="g"><i class="fa  fa-google-plus"></i></li>
+            <li class="twitter"><i class="fa fa-twitter"></i></li>
+        </ul>
+     </div>
+   </span>
+  </section>  
 		
     <nav>	  	
 	  	<div class="menu-icon">
@@ -62,6 +72,13 @@
     	<div class="col-md-8">
        <div class="judul"> pembuatan minyak wijen</div>
        <img src="./img/slide3.jpg" alt="placeholder+image" class="img-responsive gambar">
+       <span class="share"><div class="ikon2">
+        <ul>
+            <li><a href="" class="f"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="g"><i class="fa  fa-google"></i></a></li>
+            <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>           
+        </ul>
+     </div></span><br>
     	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis</p>
       
        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis</p>
@@ -112,6 +129,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit....
       </div>
       </div>
+      <div class="judul"><i class="fa fa-twitter"></i>&nbsp;&nbsp;twitter</div>
     </section>
  	</div>
 	</div>
@@ -150,25 +168,8 @@
       </div>  
 </div>
 <div id="kaki"><div class="container"><p>&copy;&nbsp;2018 panjihitam.com</p></div></div> 
-<script src="./js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".menu-icon").on("click",function(){
-			/* Act on the event */
-			$("nav ul").toggleClass('showing');
+<script src="./public/assets/js/travel.min.js"></script>
 
-			});
-	});
-	/*scroollefect*/
-	$(window).on("scroll",function(){
-      if($(window).scrollTop()){
-      	$('nav').addClass('black');
-      }
-      else{
-      	$('nav').removeClass('black');
-      }
-	});
-</script>
 
 </body>
 </html>

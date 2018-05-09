@@ -10,7 +10,10 @@ var gulp = require('gulp'),
     gulp.task("sass",function(){
     	return gulp.src('./resource/assets/sass/travel/**/*.scss')
     	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(autoprefixer('last 2 version'))
+        .pipe(autoprefixer({
+             browsers: ['last 2 versions'],
+            cascade: false
+        }))
     	.pipe(concat('travel.min.css'))
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write('../maps'))
@@ -19,7 +22,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('script',function(){  
-        return gulp.src("./resource/assets/js/**/*.js")  
+        return gulp.src("./resource/assets/js/tr/**/*.js")  
        /*.pipe(babel({
         presets:['es2015']
         

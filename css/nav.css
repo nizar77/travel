@@ -1,9 +1,10 @@
 @import url(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"); 
 
 html,body{
-	padding: 0;
-	margin: 0;
+	margin:0;
+    padding:0;
 	width: 100%;
+	overflow-x: hidden;
 }
 body{
 	font-family: Arial;
@@ -18,7 +19,9 @@ body{
 	z-index: 1;
 }
 p{
-	font-size: 20px;
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight:100;
 	transition: all .3s ease-in-out;
 }
 section.kepala{
@@ -45,15 +48,14 @@ section.kepala .title{
 section.kepala .title1 a{
 	color: #fff;
 	text-decoration: none;	
-	}
+}
 section.kepala .title1 a:hover{
 	color: lightblue;
 	transition: 1s;	
-	}
+}
 
 .ikon ul{
-	list-style: none;
-	
+	list-style: none;	
 }
 .ikon ul li{
 	width: 25px;
@@ -62,7 +64,6 @@ section.kepala .title1 a:hover{
 	text-align:center;
 	float: right;
 	cursor: pointer;
-
 }	
 .ikon ul li.twitter:hover{
 	padding-top:4px;
@@ -95,7 +96,39 @@ section.kepala .title1 a:hover{
 	border:1px solid #ff0000;
 	transition: .5s ease;
 }
+.ikon2 ul{
+	list-style: none;
+	
+}
+.ikon2 ul li{
+	width: 30px;
+	height: 30px;
+	line-height: 0;
+	text-align:center;
+	padding-top:3px;
+	margin-left: 3px;
+	float: right;
+	cursor: pointer;
+	border-radius: 50%;
+	border:1px solid grey;
+}
+.ikon2 ul li a{	
+	text-align: center;
+}
+.ikon2 ul li a.f{
+	color:#3b5998;
+}
+.ikon2 ul li a.g{
+	color:#dd4b39;
+}
+.ikon2 ul li a.twitter{
+	color:#1dcaff;
+}
+.ikon2 ul li:hover{
+	transform:scale(1.2);
+	box-shadow: 2px 3px 2px grey;
 
+}
 
 header{
 	width: 100%;
@@ -115,18 +148,27 @@ section.isi2{
 	text-align: justify;
 }
 section.isi2 .judul{
-	font-size: 1.82em;
-	font-weight: 600;
+	font-family: 'Roboto';
+	font-size: 2em;
+	font-weight: 100;
+	text-transform: capitalize;
 	color:#3e6d65;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
 }
 section.isi2 img.gambar{
 	width: 100%;
 	top: 0;
-	margin-bottom: 20px;
-
+	margin-bottom: 5px;
 }
+section.isi2 span.share{
+	display: block;
+	top: 0;
+	font-size: 1.52em;
+	margin-bottom: 1.2em;
+	cursor:pointer;
+}
+
 .verticalline {
   border-left: 1px solid lightgrey;   
 }
@@ -140,7 +182,7 @@ section.kanan div.judul{
 	left:0;
 	font-size: 1.35em;
 	text-align: right;
-	font-weight: bold;
+	font-weight: 800;
 	color:#086969;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -150,14 +192,17 @@ section.kanan div.judul::after{
 	
 	display: inline-block;
     vertical-align: middle;
-    height: 4px;
+    height: 3vh;
     margin-left: 4px;
     content: "";
-    background-color: purple;
+    background-color: #086969;
     box-sizing: border-box;
     width: 46%;
-    
-}
+    -ms-transform: skewX(-25deg); /* IE 9 */
+    -webkit-transform: skewX(-25deg); /* Safari */
+    transform: skewX(-25deg); /* Standard syntax */
+    border-top: 2px solid orange;
+  }
 
 section.kanan p{
 	padding-left:20px;
@@ -180,7 +225,6 @@ nav{
 	margin-top: 0;	
 	transition:all 1s ease;
 	z-index: 2;
-
 }
 nav .logo{
 	position: fixed;
@@ -210,8 +254,7 @@ nav.black .logo img{
 nav ul {
 	list-style: none;
 	background: rgba(255,255,255,.1);
-	overflow: hidden;
-	
+	overflow: hidden;	
 	padding: 0;
 	text-align: center;
 	margin: 0;
@@ -252,6 +295,8 @@ nav ul li a:hover{
 nav.black ul li a{
 	padding-left: 20px;
 	color: #fff;
+	font-size: 13px;
+	font-weight: 100;
 	transition: 1s;
 }
 nav.black ul li a:hover{
@@ -493,12 +538,44 @@ span.overlay {
   position: absolute;
   bottom:0;
   left: 0;
-  padding-left: 20px;
-  font-size: 26px;
-  color:red;
+  margin-bottom: 3px;
+  padding-top:5px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: rgba(0,0,0,.85);
+  border-right: 2px solid orange;
+  width: 95%;
 }
+span.overlay p a{
+ color: #086969;
+ font-style: 14px;
+ line-height: 16px;
+ font-weight: 100;
+ text-decoration: none;
+ transition: all .5s ease-in-out;
+}
+span.overlay p a:hover{
+ color:#fff;
+ transition: all .5s ease-in-out; 
+ } 
+ .modal{
+ 	position: absolute;
+ 	bottom: 0;
+ }
+ .modal-header{
+ 	height: 30px;
+ 	background: #008768;
+ 	padding:0;
+ 	text-align:right;
+ 	 }
+.modal-title{
+	float: left;
+	padding:3px 5px;
 
-
+} 	
+audio{
+	min-width:350px; 
+} 
 .item:hover img {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -671,9 +748,9 @@ ol.simple-list > li:before {
     width: 1.2em;  
     height:1.2em;  
     padding-top:3px;
-    font-size: 2em;
+    font-size: 2.2em;
     line-height: 1;
-    font-weight: lighter;
+    font-weight: 100;
     text-align: center;
     color: #fff;    
     background:#008786;
@@ -782,6 +859,13 @@ footer
 		width: 100%;
 		padding: 8px 0;
 		
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 100;
+		transition: all .3s ease-in-out;	
 	}
 	.menu-icon{
 		display: block;

@@ -8,11 +8,10 @@
      <meta name="description" content="Your description">
       <meta name="keywords" content="Your keywords">
      <meta name="author" content="Your name">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./public/assets/css/travel.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery31.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
 </head>
 
 <body>
@@ -188,7 +187,29 @@
           <li><span class="depan"><i class="glyphicon glyphicon-play-circle"></i></span>
           <p><a href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p></li>
           <li><span class="depan"><i class="glyphicon glyphicon-play-circle"></i></span>
-          <p><a href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p></li>
+          <p><a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p></li>
+
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+
+                  <div class="modal-content">
+                     
+                      <div class="modal-header"><span class="modal-title" id="myModalLabel">dsjdksdjksjdklsjkl</span>
+                     <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">X</button>
+                    
+                   </div>
+                  
+                      <div class="text-center">
+                     <audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="horse.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                   </audio>                  
+                
+               </div>
+                  </div>
+                </div>
+              </div>
         </ul> 
         </div> 
         <br>
@@ -230,7 +251,7 @@
                 <div class="item">
                  <img src="./img/slide3.jpg" class="img-responsive tabs-gambar">
                   <span class="overlay">
-                     dfdfdfdfdf
+                     <p><a href="">Lorem ipsum dolor sit amet, consectetuer </a></p>
                    </span>
                 
               </div>
@@ -298,34 +319,7 @@
   </section> 
 </div>
 
-<script src="./js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".menu-icon").on("click",function(){
-			/* Act on the event */
-			$("nav ul").toggleClass('showing');
-			});    
-	});
-	/*scroollefect*/
-	$(window).on("scroll",function(){
-      if($(window).scrollTop()){
-      	$('nav').addClass('black');
-      }
-      else{
-      	$('nav').removeClass('black');
-         } 
-	});
-  $("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo('#slideshow');
-    }, 4000);
-</script>
+<script src="./public/assets/js/travel.min.js"></script>
 
 </body>
 </html>
