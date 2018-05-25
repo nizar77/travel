@@ -60,20 +60,21 @@ section.kepala span.title-0::after{
  border-top: 42px solid orange;
  border-right: 35px solid transparent;
 }
-section.kepala .title1{
-	position: relative;
-	display: inline-block;
-	padding-top: 1vh;
-	padding-left: 20px;
-	padding-bottom: 0;
-	color:#fff;
-}
+
 section.kepala .title{
-	position: relative;
 	color: #fff;
 	display: inline-block;	
-	padding-bottom: 1vh;
+	
 	}
+section.kepala .title1{
+	position:absolute;
+	margin-top:10px;
+	height:10px;
+	padding-left: 20px;
+	
+	color:#fff;
+	overflow: hidden;
+}	
 section.kepala .title1 a{
 	color: #fff;
 	text-decoration: none;	
@@ -82,6 +83,21 @@ section.kepala .title1 a:hover{
 	color: lightblue;
 	transition: 1s;	
 }
+section.kepala .title1 div, section.kepala .title1 div p {
+  bottom:0;
+  padding: 10px 0;
+}
+section.kepala .title1 div {
+  animation: slide 10s 8s infinite;
+}
+@keyframes slide {
+  0% { margin-top: 0; }
+  25% { margin-top: -18px; }
+  50% { margin-top: -36px; }
+  75% { margin-top: -54px; }
+  100% { margin-top: 0; }
+}
+
 section.tengah{
 	position: relative;
 	background:#006620;
@@ -95,12 +111,14 @@ section.tengah h2.satu{
 	font-size: 2em;
 	text-transform:uppercase;
 	font-weight:600;
+	text-shadow: 2px 3px 2px black;
 }
 section.tengah h4.dua{
 	margin-top: 50px;
 	font-size: 1.53em;
 	font-weight: 500;
 	text-transform: uppercase;	
+	text-shadow: 2px 2px 1px black;
 }
 section.tengah .iklan{
 	text-align:right;
@@ -156,7 +174,7 @@ section.tengah .iklan img{
 }
 /*nav--*/
 nav{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	position: relative;
 	width: 100%;
 	margin-top: 0;	
@@ -315,8 +333,7 @@ div.slide{
 	float: left;
 	
 }
-div.slide img{
-	height: auto;
+div.slide img{	
 	width: 100%;
 }
 div.artikel{  
@@ -561,7 +578,30 @@ section.kanan p{
 	padding-left:20px;
 	
 }
+section.isi-utama{
+	margin:0;
+}
+section.isi-utama img{
+	top:0;
+	width:100%;
+	margin-bottom:20px;
+}
+section.isi-utama img.bayang{
+	
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
 
+section.isi-utama p.judulpost{
+	font-size:1.85em;
+	padding-right: 20px;
+	color:rgb(17,78,41);
+}
+section.isi-utama p.isipost{
+	text-align:justify;
+	padding-right: 20px;
+}
 /*ribobon*/
 
 .ribbon{
@@ -590,6 +630,8 @@ h4.terkait{
 	height:1em;		
 	padding:0 6px;
 	margin-bottom:10px;
+    float: right;
+	right:0;
 
 }
 h4.terkait:hover{
@@ -603,23 +645,43 @@ h4.terkait p{
 	background:#008678;
 	color:#fff;
 	font-size:1em;
-	font-weight:100;
+	font-weight:100;	
 	border-right: 1px solid orange;
 	border-left: 1px solid orange;
 	box-shadow:5px 4px 3px#02245b;
 	
 }
+h4.tags{
+	top:0;
+	text-align: center;
+	display: inline-block;
+	height:1em;		
+	padding:0 6px;
+	margin-bottom:10px;
+    float: right;
+	right:0;
 
-#footer{
-	bottom:0;
-	margin: 0;
-	padding:0;
-	background: #000;
-	width: 100%;
-	min-height:102px;
-	border-bottom: 1px solid #262728;
-	margin-top: 10px;
+
 }
+h4.tags:hover{
+  -ms-transform:skewX(-20deg);
+  -webkit-transform:skewX(-20deg);
+  transform:skewX(-20deg);
+
+}
+h4.tags p{
+	padding:5px 5px;
+	background:#008678;
+	color:#fff;
+	font-size:1em;
+	font-weight:100;
+	border-right: 1px solid orange;
+	border-left: 1px solid orange;
+	box-shadow:5px 4px 3px#02245b;
+	border-radius:20px;
+	
+}
+
 /*Galeri*/
 .item {
   position: inherit;
@@ -666,16 +728,28 @@ span.overlay p a:hover{
 
 
 /*footer*/
-#footer>.isikaki{
-	padding-top: 15px;
+#footer{
+	bottom:0;
+	margin: 0;
+	padding:0;
+	background: #000;
+	width: 100%;
+	min-height:102px;
+	border-bottom: 1px solid #262728;
+	margin-top: 10px;
+	padding:20px 0;
+}
+
+#footer .isikaki{
+   color:#fff;
 
 }
-#footer>.isikaki p a{
+#footer .isikaki p a{
 	float: left;
 	font-size:14px;
 	color:#086969;
 }
-#footer>.isikaki p a:hover{
+#footer .isikaki p a:hover{
 	text-decoration: none;
 	color:#fff;
 	transition: .53s ease;
@@ -691,6 +765,12 @@ span.overlay p a:hover{
 	text-transform: uppercase;
 	float: left;
 	color:#fff;
+}
+span.copy p{
+	font-family:'Roboto',sans-serif;
+	font-weight: 100;
+	bottom: 0;
+	text-align:center;
 }
 /*--*/
 @media(max-width: 922px)
@@ -813,10 +893,10 @@ section.tengah h4.dua{
  }
  section.tengah h2.satu{
 	position:absolute;
-	float:right;
+	
 }
 section.tengah h4.dua{
-	text-align: center;
+	
 }
 section.tengah .iklan{
 	display:none;
@@ -852,6 +932,13 @@ section.tengah .iklan{
 	}
 	.no-gutter > [class*='col-'] {
      margin-bottom:0;
+}
+section.isi-utama p.judulpost{
+	font-size: 1.45em;
+	transition:all .4s ease-in-out;
+}
+section.isi-utama p.isipost{
+	padding:0;
 }
 
 }

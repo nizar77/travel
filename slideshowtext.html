@@ -1,0 +1,44 @@
+<div class="container">
+  <h4 class="slides"> “Be yourself; everyone else is already taken.” 
+― Oscar Wilde</h4>
+  <h4 class="slides">“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” 
+― Bernard M. Baruch</h4>
+  <h4 class="slides">“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.” 
+― Ralph Waldo Emerson</h4>
+</div>
+
+* {
+  font-family: 'Lora', serif;
+  margin: auto;
+  height: 0;
+  text-align: center;
+  color: #383838;
+}
+
+h4 {
+  font-size: 200%;
+}
+
+body {
+  background-color: #fffaf2;
+}
+
+.container {
+  width: 50%;
+  padding-top: 150px;
+}
+
+js  \
+$(document).ready(function(){
+  
+  $(function(){
+    
+    $('.container .slides:gt(0)').hide();
+    setInterval(function(){
+      $('.container :first-child').fadeOut(2000).next('.slides').fadeIn(2000)
+      .end().appendTo('.container');
+  }, 7000);
+    
+  });
+  
+});
