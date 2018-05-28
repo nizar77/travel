@@ -21,10 +21,10 @@
     <div class="container">
 
     <div class="title1">      
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      <div class="">
+        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
       </div>
     </div>
     <span class="pull-right title">
@@ -135,22 +135,19 @@
  </div>
 </div><!--container-->    
      
-  
-
 <div id="footer">
-  <div class="container">
-    <div class="row">
-     <div class="isikaki">
-       <div class="col-md-4">
-         <p>ALAMAT KAMI : </p>
-         <p><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Jl. Rambutan, Tanjung Selor</p>
-         <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;Email : blhkaltara@gmail.com</p>
-         <p><i class="fa fa-phone"></i>&nbsp;&nbsp;Telp: 0552-2028264</p>
-         <p><i class="fa fa-mobile-phone"></i>&nbsp;&nbsp;SMS: 08126383434</p>
-         
-       </div>
+ <div class="container">
+  <div class="row">
+    <div class="isikaki">
+      <div class="col-md-4">
+      <p>ALAMAT KAMI : </p>
+      <p><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Jl. Rambutan, Tanjung Selor</p>
+      <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;Email : blhkaltara@gmail.com</p>
+      <p><i class="fa fa-phone"></i>&nbsp;&nbsp;Telp: 0552-2028264</p>
+      <p><i class="fa fa-mobile-phone"></i>&nbsp;&nbsp;SMS: 08126383434</p>
+      </div>
 
-       <div class="col-md-4">
+      <div class="col-md-4">
         <div class="text-center">
         <p><i class="fa fa-tags"></i>&nbsp;TAGS</p>
         <h4 class="tags"><p>berita nusantara</p></h4>
@@ -161,13 +158,11 @@
         <h4 class="tags"><P>berita lingkungan</P></h4>
        </div>
        </div>
-       <div class="col-md-4">
-         
-       </div>
-      
-     </div>
 
-    </div>
+       <div class="col-md-4">
+      </div>      
+     </div>
+  </div>
     <hr>
        <span class="copy"><p> copyright &copy;2018 </p></span>
   </div>
@@ -179,8 +174,8 @@
     $(".menu-icon").on("click",function(){
       /* Act on the event */
       $("nav ul").toggleClass('showing');
-      });    
-  });
+    });    
+});
   /*scroollefect*/
   $(window).on("scroll",function(){
       if($(window).scrollTop()){
@@ -189,7 +184,8 @@
       else{
         $('nav').removeClass('black');
          } 
-  });
+    });
+
   $(window).on("scroll",function(){
       if($(window).scrollTop()){
         $('logo').addClass('black');
@@ -197,19 +193,7 @@
       else{
         $('logo').removeClass('black');
          } 
-  });
-
-  $("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo('#slideshow');
-    }, 4000);
+    });
 </script>
-
 </body>
 </html>

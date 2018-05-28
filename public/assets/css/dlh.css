@@ -70,8 +70,7 @@ section.kepala .title1{
 	position:absolute;
 	margin-top:10px;
 	height:10px;
-	padding-left: 20px;
-	
+	padding-left: 20px;	
 	color:#fff;
 	overflow: hidden;
 }	
@@ -447,14 +446,12 @@ img .text{
 
 
 }
-#slideshow div p{
-	padding-top: 5px;
-	background: rgba(255,255,255,.85);
-}
+
 /*ol-list*/
 div.list1{
 	padding-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom:25px;
+	margin-left:1em;
 }
 
 ol.simple-list {
@@ -491,7 +488,6 @@ ol.simple-list > li{
     margin-bottom: 10px;
     padding-left: 1em;    
     }
-
 
 ol.simple-list > li p{
 	font-size: 17px;
